@@ -1,33 +1,31 @@
-# Gradle files
-.gradle/
-build/
+.DS_Store
 
-# Local configuration file (sdk path, etc)
-local.properties
+application/cache/*
+!application/cache/index.html
 
-# Log/OS Files
-*.log
+application/logs/*
+!application/logs/index.html
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
+!application/*/.htaccess
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+composer.lock
 
-# Keystore files
-*.jks
-*.keystore
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
 
-# Android Profiling
-*.hprof
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
